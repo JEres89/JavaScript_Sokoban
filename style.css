@@ -1,0 +1,51 @@
+
+body {
+	display: flex;
+}
+
+#grid {
+	min-width: calc(34*19px);
+	max-width: calc(34*19px);
+	min-height: calc(34*16px);
+	max-height: calc(34*16px);
+
+	background-color: rgb(160, 77, 21);
+	border: 1px solid black;
+}
+.row {
+	display: flex;
+	min-width: 100%;
+	width: 100%;
+	height: 34px;
+}
+
+.row :hover	{
+	background-color: brown;
+}
+.row > div {
+	width: 32px;
+	height: 32px;
+	border: 1px dotted black;
+}
+.tile-space {
+	background-color: darkkhaki;
+}
+.tile-wall {
+	background-image: url("214.png");
+}
+.tile-goal {
+	background-color: green;
+}
+
+#highscores {
+	flex: 0 0 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: antiquewhite;
+	border-width: 10px;
+	border-style: double;
+}
+#highscores h1 {
+	align-self: center;
+	justify-content: center;
+}
